@@ -11,13 +11,14 @@ import io.cucumber.testng.CucumberOptions;
 
 public class RegrassionTest extends AbstractTestNGCucumberTests {
 	@BeforeSuite
-	public void beforeSuite() {
+	public void beforeSuite(String browser) {
+		System.setProperty("browser", browser);
 		System.out.println("Regression test suite began.....");
 	}
 
 	@AfterSuite
 	public void afterSuite() {
-		//EmailSender.emailSender();
+//		EmailSender.emailSender();
 		System.out.println("Email sent successfully with attachment.");
 	}
 }

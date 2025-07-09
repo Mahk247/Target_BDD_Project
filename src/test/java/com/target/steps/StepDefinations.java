@@ -14,8 +14,8 @@ public class StepDefinations {
 	WebDriver dr;
 	Homepage hp;
 	
-	@Given("I launch the Target website with {string} browser")
-	public void i_launch_the_Target_website_with_browser(String browser){
+	@Given("I launch the Target website with {string}")
+	public void i_launch_the_Target_website_with_(String browser){
 		dr=Browser.openBrowser(browser);
 		hp=new Homepage(dr);
 

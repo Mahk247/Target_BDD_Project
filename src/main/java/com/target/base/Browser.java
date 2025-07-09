@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
+
 import com.target.utils.Utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -15,6 +17,7 @@ public class Browser {
 	public static HashMap<String, WebDriver> hm = new HashMap<String, WebDriver>();
 	public static WebDriver dr;
 
+//	@Parameters({"browser"})
 	public static WebDriver openBrowser(String browser) {
 
 		if (browser.equalsIgnoreCase("chrome")) {

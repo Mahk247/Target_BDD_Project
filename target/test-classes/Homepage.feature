@@ -4,8 +4,9 @@ Feature: Target Website Shopping Functionality
   I want to search for products, add them to my cart, and verify the cart contents
   So that I can shop online at Target conveniently
 
+
   Background:
-    Given I launch the Target website with "chrome" browser
+    Given I launch the Target website with "browser"
     
   @SearchProduct
   @regression

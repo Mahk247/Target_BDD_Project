@@ -8,22 +8,26 @@ Background:
 
   Scenario: Verify navigation links are visible and clickable
     
-    Then I should see navigation links "Home", "Weekly Ad", "Registry", "Deals", "Find Stores"
-    When I click on the "Deals" link
-    Then I should be navigated to the Deals page
+    Then I should see navigation links "Registry & Wish List", "Weekly Ad", "Find Stores"
+    When I click on the "Weekly Ad" link
+    Then I should be navigated to the Weekly Ad banner
+    And I verify the page title "Target Weekly Ad"
     Then close the browser
  
   Scenario: Search with a valid product keyword
 
     When I enter "laptop" in the search bar
     And I submit the search
-    Then I should see search results related to "laptop"
+    Then I should see search results list of "laptop"
+    And i verify the page title "laptop" : Target
     Then close the browser
 
   Scenario: Verify promotional banners are displayed
 
     Then I should see at least one promotional banner displayed
     And the banner should contain an image and a clickable link
+    When I click on first banner
+    And I can see the side window with the banner profucts
     Then close the browser
 
   Scenario: Verify Sign In button presence and navigation
@@ -40,10 +44,10 @@ Background:
     Then close the browser
     
 Scenario: Verify category links presence and navigation
-
+		When I click on Categiries sub menu
     Then I should see category links such as "Electronics", "Clothing", "Home", "Toys"
-    When I click on the "Electronics" category link
-    Then I should be navigated to the Electronics category page
+    When I click on the "Toys" category link
+    Then I should be click on "Explore all" in sub menu
     Then close the browser
     
 Scenario: Verify featured products display
