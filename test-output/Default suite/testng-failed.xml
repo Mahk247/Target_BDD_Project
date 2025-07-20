@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.target.pages.Homepage_Test">
+      <class name="com.target.runner.RegrassionTest">
         <methods>
-          <include name="verifyHomepage"/>
+          <include name="beforeclass"/>
+          <include name="runScenario"/>
+          <include name="tearDownClass"/>
+          <include name="closeBrowser"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- com.target.pages.Homepage_Test -->
+      </class> <!-- com.target.runner.RegrassionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

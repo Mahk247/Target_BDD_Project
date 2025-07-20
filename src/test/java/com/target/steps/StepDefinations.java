@@ -1,8 +1,7 @@
 package com.target.steps;
 
 import org.openqa.selenium.WebDriver;
-
-import com.target.base.Browser;
+import com.target.base.Base;
 import com.target.pages.Homepage;
 
 import io.cucumber.java.en.And;
@@ -14,12 +13,12 @@ public class StepDefinations {
 	WebDriver dr;
 	Homepage hp;
 	
-	@Given("I launch the Target website with {string}")
-	public void i_launch_the_Target_website_with_(String browser){
-		dr=Browser.openBrowser(browser);
+	@Given("I launch the Target Homepage")
+	public void i_launch_the_Target_Homepage(){
+		dr=Base.getDriver();
 		hp=new Homepage(dr);
-
 	}
+	
 	@When("I enter {string} into the search bar")
 	public void i_enter_into_the_search_bar(String string) {
 	    hp.search_box(string);
@@ -108,10 +107,10 @@ public class StepDefinations {
 	}
 //	==============================================================================-
 
-	@Given("I am on the Target homepage with {string} browser")
-	public void i_am_on_the_Target_homepage_with_browser(String browser) {
-		dr=Browser.openBrowser(browser);
-	}
+//	@Given("I am on the Target homepage with {string} browser")
+//	public void i_am_on_the_Target_homepage_with_browser(String browser) {
+//		dr=Browser.openBrowser(browser);
+//	}
 
 	@Then("I should see navigation links {string}, {string}, {string}, {string}, {string}")
 	public void i_should_see_navigation_links(String string, String string2, String string3, String string4, String string5) {

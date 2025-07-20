@@ -1,69 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-08T23:31:37 EDT" name="Suite" finished-at="2025-07-08T23:31:38 EDT" duration-ms="1031">
+  <suite started-at="2025-07-20T00:23:58 EDT" name="Suite" finished-at="2025-07-20T00:24:13 EDT" duration-ms="15695">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.target.runner.RegrassionTest@25084a1e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.target.runner.RegrassionTest@4d0f2471]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.target.runner.RegrassionTest@74751b3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-07-08T23:31:37 EDT" name="Test" finished-at="2025-07-08T23:31:38 EDT" duration-ms="1031">
+    <test started-at="2025-07-20T00:23:58 EDT" name="Test will be run with chrome" finished-at="2025-07-20T00:24:06 EDT" duration-ms="8429">
       <class name="com.target.runner.RegrassionTest">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.target.runner.RegrassionTest@25084a1e]" started-at="2025-07-08T23:31:37 EDT" name="beforeSuite" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1752031897773" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @BeforeSuite annotated beforeSuite.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @BeforeSuite annotated beforeSuite.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:712)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.target.runner.RegrassionTest@25084a1e]" started-at="2025-07-08T23:31:37 EDT" name="setUpClass" finished-at="2025-07-08T23:31:38 EDT" duration-ms="281" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.target.runner.RegrassionTest@4d0f2471]" started-at="2025-07-20T00:23:58 EDT" name="setUpClass" finished-at="2025-07-20T00:23:58 EDT" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.target.runner.RegrassionTest@25084a1e]" started-at="2025-07-08T23:31:38 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-08T23:31:38 EDT" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method is-config="true" signature="beforeclass(java.lang.String)[pri:0, instance:com.target.runner.RegrassionTest@4d0f2471]" started-at="2025-07-20T00:23:58 EDT" name="beforeclass" finished-at="2025-07-20T00:24:02 EDT" duration-ms="4522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.target.runner.RegrassionTest@4d0f2471]" started-at="2025-07-20T00:24:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T00:24:04 EDT" duration-ms="1896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Target Website Shopping Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.target.runner.RegrassionTest@4d0f2471]" started-at="2025-07-20T00:24:04 EDT" name="tearDownClass" finished-at="2025-07-20T00:24:06 EDT" duration-ms="1718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.target.runner.RegrassionTest -->
+    </test> <!-- Test will be run with chrome -->
+    <test started-at="2025-07-20T00:24:06 EDT" name="Test will be run with firefox" finished-at="2025-07-20T00:24:13 EDT" duration-ms="7227">
+      <class name="com.target.runner.RegrassionTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.target.runner.RegrassionTest@74751b3]" started-at="2025-07-20T00:24:06 EDT" name="setUpClass" finished-at="2025-07-20T00:24:06 EDT" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="beforeclass(java.lang.String)[pri:0, instance:com.target.runner.RegrassionTest@74751b3]" started-at="2025-07-20T00:24:06 EDT" name="beforeclass" finished-at="2025-07-20T00:24:11 EDT" duration-ms="4739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.target.runner.RegrassionTest@74751b3]" started-at="2025-07-20T00:24:11 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T00:24:13 EDT" duration-ms="1632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Target Website Shopping Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.target.runner.RegrassionTest@74751b3]" started-at="2025-07-20T00:24:13 EDT" name="tearDownClass" finished-at="2025-07-20T00:24:13 EDT" duration-ms="837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.target.runner.RegrassionTest@74751b3]" started-at="2025-07-20T00:24:13 EDT" name="closeBrowser" finished-at="2025-07-20T00:24:13 EDT" duration-ms="62" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @BeforeSuite annotated beforeSuite.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MHK', ip: '192.168.12.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250707120347, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10076, moz:profile: C:\Users\mahmu\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 68a542df-daf9-4874-96ad-caba6b5c28b5]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @BeforeSuite annotated beforeSuite.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:712)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MHK', ip: '192.168.12.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250707120347, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10076, moz:profile: C:\Users\mahmu\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 68a542df-daf9-4874-96ad-caba6b5c28b5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at com.target.base.Base.quitDriver(Base.java:19)
+at com.target.runner.RegrassionTest.closeBrowser(RegrassionTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:351)
 at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -76,19 +138,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.target.runner.RegrassionTest@25084a1e]" started-at="2025-07-08T23:31:38 EDT" name="tearDownClass" finished-at="2025-07-08T23:31:38 EDT" duration-ms="718" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.target.runner.RegrassionTest@25084a1e]" started-at="2025-07-08T23:31:38 EDT" name="afterSuite" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1752031898844" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.target.runner.RegrassionTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test will be run with firefox -->
   </suite> <!-- Suite -->
 </testng-results>

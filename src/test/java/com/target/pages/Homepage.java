@@ -43,8 +43,8 @@ public class Homepage {
 	WebElement select_delivery_method_shipping;
 
 	public void select_delivery_method() {
-		select_delivery_method_pickup.click();
-		select_delivery_method_delivery.click();
+//		select_delivery_method_pickup.click();
+//		select_delivery_method_delivery.click();
 		select_delivery_method_shipping.click();
 	}
 

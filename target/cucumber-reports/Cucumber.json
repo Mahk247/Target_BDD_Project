@@ -1,1 +1,115 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2997300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I launch the Target Homepage",
+            "match": {
+              "location": "com.target.steps.StepDefinations.i_launch_the_Target_Homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-07-20T04:24:11.405Z",
+        "line": 14,
+        "name": "Search for a product",
+        "description": "",
+        "id": "target-website-shopping-functionality;search-for-a-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 210818300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter \"Bluetooth Headphones\" into the search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bluetooth Headphones\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.target.steps.StepDefinations.i_enter_into_the_search_bar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 413629200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click the search button",
+            "match": {
+              "location": "com.target.steps.StepDefinations.i_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "search results for \"Bluetooth Headphones\" should be displyed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bluetooth Headphones\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.target.steps.StepDefinations.search_results_for_should_be_displyed(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 976250800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "close the browser",
+            "match": {
+              "location": "com.target.steps.StepDefinations.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchProduct"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Target Website Shopping Functionality",
+    "description": "  As a user\n  I want to search for products, add them to my cart, and verify the cart contents\n  So that I can shop online at Target conveniently",
+    "id": "target-website-shopping-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/com/target/features/Homepage.feature",
+    "tags": []
+  }
+]

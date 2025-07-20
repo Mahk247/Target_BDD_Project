@@ -7,30 +7,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.Parameters;
-
 import com.target.utils.Utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Browser {
 	private static Logger log = Utility.getLog(Browser.class);
 	public static HashMap<String, WebDriver> hm = new HashMap<String, WebDriver>();
-	public static WebDriver dr;
+	private static WebDriver dr;
 
-//	@Parameters({"browser"})
-	public static WebDriver openBrowser(String browser) {
+	public static WebDriver OpenBrowser(String browserName) {
 
-		if (browser.equalsIgnoreCase("chrome")) {
+		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			dr = new ChromeDriver();
 			log.info("Chrome is opening");
 			hm.put("driver", dr);
-		} else if (browser.equalsIgnoreCase("firefox")) {
+		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			dr = new FirefoxDriver();
 			log.info("Firefox is opening");
 			hm.put("driver", dr);
-		} else if (browser.equalsIgnoreCase("edge")) {
+		} else if (browserName.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			dr = new EdgeDriver();
 			log.info("EDGE is opening");
@@ -40,7 +37,7 @@ public class Browser {
 		}
 		dr.manage().window().maximize();
 		dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		dr.get("https://www.target.com/");
+
 		return dr;
 	}
 }
