@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2997300,
+              "duration": 2971300,
               "status": "passed"
             },
             "line": 9,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-07-20T04:24:11.405Z",
+        "start_timestamp": "2025-07-22T03:06:21.742Z",
         "line": 14,
         "name": "Search for a product",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 210818300,
+              "duration": 318976100,
               "status": "passed"
             },
             "line": 15,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 413629200,
+              "duration": 606516400,
               "status": "passed"
             },
             "line": 16,
@@ -81,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 976250800,
+              "duration": 1638852900,
               "status": "passed"
             },
             "line": 18,
