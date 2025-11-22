@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="chromeTest">
+	<parameter name="broswer" value="chrome"></parameter>
 		<classes>
-			<class name="com.target.runner.RegrassionTest"></class>
+			<class name="newrezTest.Runner"></class>
+		</classes>
+	</test>
+	<test thread-count="5" name="firefoxTest">
+	<parameter name="broswer" value="firefox"></parameter>
+		<classes>
+			<class name="newrezTest.Runner"></class>
 		</classes>
 	</test>
 </suite>
